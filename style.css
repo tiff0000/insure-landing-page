@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-violet: hsl(256, 26%, 20%);
+    --greyish-blue: hsl(216, 30%, 68%);
+    --very-dark-violet: hsl(270, 9%, 17%);
+    --dark-grayish-violet: hsl(273, 4%, 51%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    color: var(--dark-violet);
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'DM Serif Display', sans-serif;
+}
+
+h1,
+h2 {
+    font-size: 4em;
+    position: relative;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0;
+    padding-top: 50px;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    line-height: 1.7;
+    opacity: 0.8;
+}
+
+.line-top::before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 150px;
+}
+
+.line-violet::before {
+    background-color: var(--dark-violet);
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn-reverse {
+    border-color: var(--dark-violet);
+    color: var(--dark-violet);
+}
+
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1200px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex>div {
+    flex: 1;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+/* Nav styling */
+nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+nav .hamburger {
+    display: none;
+}
+
+nav .hamburger:focus {
+    outline: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+nav li a {
+    color: var(--dark-grayish-violet);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Header styling */
+header {
+    background-color: var(--dark-violet);
+    color: #fff;
+    padding: 50px 0;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 250px;
+}
